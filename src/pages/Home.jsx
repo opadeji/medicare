@@ -3,7 +3,7 @@ import Hero from "../Components/Block/Home/Hero";
 import Hiw from "../Components/Block/Home/Hiw";
 import Explore from "../Components/Block/Home/Explore";
 import Wtu from "../Components/Block/Home/Wtu";
-import Steps from "../Components/Block/Home/steps";
+import Steps from "../Components/Block/Home/Steps";
 
 const Home = () => {
   return (
