@@ -9,12 +9,3 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
 }
-.clip-left {
-  /* Top-left (0 0), Top-right (100% 0), Bottom-right (100% 75%), 
-     then a diagonal notch in bottom-left (20% 100%), and back to bottom-left (0 100%) */
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 10% 100%, 0% 100%);
-}
-
-.clip-right {
-  clip-path: polygon(90% 0, 100% 0%, 100% 100%, 0 100%);
-}
