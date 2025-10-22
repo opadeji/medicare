@@ -121,34 +121,39 @@ const Header = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="relative px-5 py-3 rounded-xl text-gray-900 bg-gradient-to-r from-white/20 to-blue-100/20 backdrop-blur-lg border border-white/40 hover:bg-gradient-to-r hover:from-blue-400/30 hover:to-blue-600/30 hover:text-blue-900 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:scale-105 transition-all duration-800"
+                className="relative px-5 py-3 rounded-xl text-gray-900bg-linear-to-r from-white/20 to-blue-100/20 backdrop-blur-lg border border-white/40 hover:bg-linear-to-r hover:from-blue-400/30 hover:to-blue-600/30 hover:text-blue-900 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:scale-105 transition-all duration-800"
                 onClick={() => setIsOpen(false)}
                 style={{
                   animation: `flipIn 0.6s ease-in-out ${index * 0.2}s both`,
                 }}
               >
                 {link.label}
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-blue-600/25 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-xl scale-95 hover:scale-100" />
+                <span className="absolute inset-0 bg-linear-to-r from-blue-500/15 to-blue-600/25 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-xl scale-95 hover:scale-100" />
               </Link>
             ))}
           </nav>
           <div className="flex flex-col gap-4 mt-8 px-6">
-            <button
-              type="button"
-              className="relative bg-gradient-to-r from-white/20 to-blue-100/20 text-blue-800 border border-blue-600/40 rounded-xl px-8 py-3 text-sm font-bold backdrop-blur-lg shadow-lg hover:shadow-[0_0_35px_rgba(59,130,246,0.5)] hover:bg-gradient-to-r hover:from-blue-200/30 hover:to-blue-300/30 hover:scale-105 transition-all duration-800 w-full"
-              onClick={() => setIsOpen(false)}
-            >
-              Get Started
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-blue-600/25 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-xl scale-95 hover:scale-100" />
-            </button>
-            <button
-              type="button"
-              className="relative bg-gradient-to-r from-blue-800 to-blue-950 text-white rounded-xl px-8 py-3 text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] hover:bg-gradient-to-r hover:from-blue-900 hover:to-blue-1000 hover:scale-105 transition-all duration-800 w-full"
-              onClick={() => setIsOpen(false)}
-            >
-              Login
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-blue-800/30 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-xl scale-95 hover:scale-100" />
-            </button>
+            <Link to={"/signup"}>
+              <button
+                type="button"
+                className="relative bg-linear-to-r from-white/20 to-blue-100/20 text-blue-800 border border-blue-600/40 rounded-xl px-8 py-3 text-sm font-bold backdrop-blur-lg shadow-lg hover:shadow-[0_0_35px_rgba(59,130,246,0.5)] hover:bg-linear-to-r hover:from-blue-200/30 hover:to-blue-300/30 hover:scale-105 transition-all duration-800 w-full"
+                onClick={() => setIsOpen(false)}
+              >
+                Get Started
+                <span className="absolute inset-0 bg-linear-to-r from-blue-500/15 to-blue-600/25 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-xl scale-95 hover:scale-100" />
+              </button>
+            </Link>
+            <Link to={"/login"}>
+              {" "}
+              <button
+                type="button"
+                className="relative bg-linear-to-r from-blue-800 to-blue-950 text-white rounded-xl px-8 py-3 text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] hover:bg-linear-to-r hover:from-blue-900 hover:to-blue-1000 hover:scale-105 transition-all duration-800 w-full"
+                onClick={() => setIsOpen(false)}
+              >
+                Login
+                <span className="absolute inset-0 bg-linear-to-r from-blue-600/30 to-blue-800/30 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-xl scale-95 hover:scale-100" />
+              </button>
+            </Link>
           </div>
         </div>
 
