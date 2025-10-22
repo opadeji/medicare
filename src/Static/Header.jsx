@@ -59,20 +59,25 @@ const Header = () => {
           </nav>
           {/* Buttons - Desktop */}
           <div className="hidden lg:flex items-center gap-4">
-            <button
-              type="button"
-              className="text-lg relative bg-gradient-to-r from-white/20 to-blue-100/20 text-blue-800 border border-blue-600/40 rounded-2xl px-7 py-3.5  font-bold backdrop-blur-lg shadow-lg hover:shadow-[0_0_35px_rgba(59,130,246,0.5)] hover:bg-gradient-to-r hover:from-blue-200/30 hover:to-blue-300/30 hover:scale-105 transition-all duration-800 focus:outline-none focus:ring-2 focus:ring-blue-600/60"
-            >
-              Get Started
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-blue-600/25 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-2xl scale-95 hover:scale-100" />
-            </button>
-            <button
-              type="button"
-              className="relative bg-gradient-to-r from-indigo-500 to-indigo-700 text-white rounded-2xl px-7 py-3.5 text-lg font-bold shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] hover:bg-gradient-to-r hover:from-blue-900 hover:to-blue-1000 hover:scale-105 transition-all duration-800 focus:outline-none focus:ring-2 focus:ring-blue-600/60"
-            >
-              Login
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-blue-800/30 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-2xl scale-95 hover:scale-100" />
-            </button>
+            <Link to={"/signup"}>
+              <button
+                type="button"
+                className="text-lg relative bg-gradient-to-r from-white/20 to-blue-100/20 text-blue-800 border border-blue-600/40 rounded-2xl px-7 py-3.5  font-bold backdrop-blur-lg shadow-lg hover:shadow-[0_0_35px_rgba(59,130,246,0.5)] hover:bg-gradient-to-r hover:from-blue-200/30 hover:to-blue-300/30 hover:scale-105 transition-all duration-800 focus:outline-none focus:ring-2 focus:ring-blue-600/60"
+              >
+                Get Started
+                <span className="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-blue-600/25 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-2xl scale-95 hover:scale-100" />
+              </button>
+            </Link>
+            <Link to={"/login"}>
+              {" "}
+              <button
+                type="button"
+                className="relative bg-gradient-to-r from-indigo-500 to-indigo-700 text-white rounded-2xl px-7 py-3.5 text-lg font-bold shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] hover:bg-gradient-to-r hover:from-blue-900 hover:to-blue-1000 hover:scale-105 transition-all duration-800 focus:outline-none focus:ring-2 focus:ring-blue-600/60"
+              >
+                Login
+                <span className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-blue-800/30 opacity-0 hover:opacity-100 transition-opacity duration-800 rounded-2xl scale-95 hover:scale-100" />
+              </button>
+            </Link>
           </div>
 
           {/* Hamburger Menu - Mobile */}
@@ -102,7 +107,7 @@ const Header = () => {
         <div
           className={`lg:hidden overflow-hidden transition-all duration-1200 ease-in-out ${
             isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-          } mt-6 pb-10 border-t border-white/25 backdrop-blur-2xl bg-gradient-to-b from-white/10 to-blue-50/10`}
+          } mt-6 py-10 border-t border-white/25 backdrop-blur-3xl bg-indigo-300 rounded-4xl`}
         >
           <nav className="flex flex-col gap-4 text-sm font-bold text-gray-900 px-6">
             {[
