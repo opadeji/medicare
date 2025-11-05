@@ -6,7 +6,7 @@ const DrDashboardLayout = () => {
   return (
     <div className="flex h-screen bg-white dark:bg-gray-900">
       {/* Sidebar - Fixed width, scrollable content */}
-      <aside className="hidden md:block w-64 flex-shrink-0">
+      <aside className="hidden md:block w-64 shrink-0">
         <DrDashboardSidebar />
       </aside>
 

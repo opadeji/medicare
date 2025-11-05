@@ -3,7 +3,7 @@ import { LuCalendar, LuClock, LuUser, LuArrowRight } from "react-icons/lu";
 
 export const HealthIndexChart = () => {
   return (
-    <div className="border border-gray-300 p-3 rounded-2xl shadow-lg dark:shadow-gray-600 font-sans w-60  flex flex-col justify-between">
+    <div className="border border-gray-300 p-5 rounded-2xl shadow-lg dark:shadow-gray-600 font-sans w-70  flex flex-col justify-between">
       {/* Header */}
       <div className="flex items-center justify-between mb-2">
         <h3 className="text-xs font-bold text-gray-800 dark:text-white">

@@ -10,7 +10,7 @@ const data = [
 
 export const DiagnosisChart = () => {
   return (
-    <div className="p-3 rounded-2xl font-sans w-60 border border-gray-300 shadow-lg dark:shadow-gray-600">
+    <div className="p-5 rounded-2xl font-sans w-70 border border-gray-300 shadow-lg dark:shadow-gray-600">
       {/* TITLE */}
       <h3 className="text-xs font-bold text-gray-800 mb-1 dark:text-white">
         DIAGNOSTICS
@@ -52,7 +52,7 @@ export const DiagnosisChart = () => {
         </div>
       </div>
 
-      {/* LEGEND – tighter spacing, smaller text */}
+      {/* LEGEND */}
       <div className="flex flex-wrap justify-around gap-1 mt-1 text-xs dark:text-white">
         {data.map((item) => (
           <div key={item.name} className="flex items-center gap-1">

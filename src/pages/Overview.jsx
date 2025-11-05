@@ -4,6 +4,7 @@ import Toggle from "../Components/Reusable/Toggle";
 import DiagnosisChart from "../Components/Block/OverviewCharts/DiagnosisChart";
 import PatientsChart from "../Components/Block/OverviewCharts/PatientsChart";
 import HealthIndexChart from "../Components/Block/OverviewCharts/HealthIndexChart";
+import Announcement from "../Components/Block/OverviewCharts/Announcement";
 
 const Overview = () => {
   return (
@@ -55,6 +56,9 @@ const Overview = () => {
         <DiagnosisChart />
         <PatientsChart />
         <HealthIndexChart />
+      </div>
+      <div>
+        <Announcement />
       </div>
     </div>
   );
