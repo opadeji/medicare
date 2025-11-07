@@ -16,7 +16,7 @@ const Announcement = () => {
   ];
 
   return (
-    <div className="w-full max-w-lg h-60 mt-3 border border-gray-200 shadow-lg dark:shadow-gray-600 rounded-2xl p-5  overflow-auto">
+    <div className="w-full max-w-lg h-60  border border-gray-200 shadow-lg  dark:bg-linear-to-br from-[#0f172a] to-[#1e293b] dark:shadow-gray-600 rounded-2xl p-5  overflow-auto">
       <h1 className="text-center text-xl font-semibold mb-4 dark:text-gray-200">
         Hospital Notice Board
       </h1>

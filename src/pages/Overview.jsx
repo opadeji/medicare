@@ -5,6 +5,9 @@ import DiagnosisChart from "../Components/Block/OverviewCharts/DiagnosisChart";
 import PatientsChart from "../Components/Block/OverviewCharts/PatientsChart";
 import HealthIndexChart from "../Components/Block/OverviewCharts/HealthIndexChart";
 import Announcement from "../Components/Block/OverviewCharts/Announcement";
+import Eotm from "../Components/Block/OverviewCharts/Eotm";
+import Chart from "../Components/Block/OverviewCharts/Chart";
+import Motivation from "../Components/Block/OverviewCharts/Motivation";
 
 const Overview = () => {
   return (
@@ -52,13 +55,24 @@ const Overview = () => {
       </div>
 
       {/* Charts - Responsive Grid */}
-      <div className="flex gap-6 mt-2">
-        <DiagnosisChart />
-        <PatientsChart />
-        <HealthIndexChart />
+      <div className="flex gap-6 ">
+        <div>
+          <div className="flex gap-6 mt-2">
+            <DiagnosisChart />
+            <PatientsChart />
+            <HealthIndexChart />
+          </div>
+          <div className="flex mt-3 gap-6">
+            <Announcement />
+            <Chart />
+          </div>
+        </div>
+        <div className="mt-2">
+          <Eotm />
+        </div>
       </div>
       <div>
-        <Announcement />
+        <Motivation />
       </div>
     </div>
   );

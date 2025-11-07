@@ -10,7 +10,7 @@ const data = [
 
 export const DiagnosisChart = () => {
   return (
-    <div className="p-5 rounded-2xl font-sans w-70 border border-gray-300 shadow-lg dark:shadow-gray-600">
+    <div className="p-5  dark:bg-linear-to-br from-[#0f172a] to-[#1e293b] rounded-2xl font-sans w-70 border border-gray-300 shadow-lg dark:shadow-gray-600">
       {/* TITLE */}
       <h3 className="text-xs font-bold text-gray-800 mb-1 dark:text-white">
         DIAGNOSTICS

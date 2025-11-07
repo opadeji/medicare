@@ -9,7 +9,7 @@ const data = [
 
 export const PatientsChart = () => {
   return (
-    <div className="border border-gray-300 p-5 rounded-2xl  font-sans w-70 shadow-lg dark:shadow-gray-600">
+    <div className="border  dark:bg-linear-to-br from-[#0f172a] to-[#1e293b] border-gray-300 p-5 rounded-2xl  font-sans w-70 shadow-lg dark:shadow-gray-600">
       <h3 className="text-xs font-bold text-gray-800 mb-1 dark:text-white">
         PATIENTS
       </h3>

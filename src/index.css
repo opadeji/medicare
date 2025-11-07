@@ -6,8 +6,7 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
 }
-/* Modern dark scrollbar */
-::-webkit-scrollbar {
+Modern dark scrollbar ::-webkit-scrollbar {
   width: 8px;
 }
 

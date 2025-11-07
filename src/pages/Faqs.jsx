@@ -62,7 +62,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-indigo-200 via-white to-teal-50 pt-20 ">
+    <div className="bg-linear-to-br from-indigo-200 via-white to-teal-50 pt-20 ">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
