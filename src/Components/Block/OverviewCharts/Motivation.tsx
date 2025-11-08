@@ -54,7 +54,7 @@ const Motivation = () => {
   return (
     <div className=" flex justify-center mt-5">
       <p
-        className={`text-center text-gray-100 text-lg font-semibold transition-opacity duration-500 ${
+        className={`text-center text-gray-700 dark:text-gray-100 text-lg font-semibold transition-opacity duration-500 ${
           fade ? "opacity-100" : "opacity-0"
         }`}
       >

@@ -62,7 +62,7 @@ const Overview = () => {
             <PatientsChart />
             <HealthIndexChart />
           </div>
-          <div className="flex mt-3 gap-6">
+          <div className="flex mt-2 gap-6">
             <Announcement />
             <Chart />
           </div>
