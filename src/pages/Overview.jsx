@@ -11,7 +11,7 @@ import Motivation from "../Components/Block/OverviewCharts/Motivation";
 
 const Overview = () => {
   return (
-    <div className="">
+    <div className="max-h-screen">
       {/* Top Bar */}
       <header className="bg-gray-200 dark:bg-indigo-950 rounded-2xl p-4 shadow-md transition-colors duration-300">
         <div className="flex flex-col lg:flex-row gap-4 justify-between items-center">

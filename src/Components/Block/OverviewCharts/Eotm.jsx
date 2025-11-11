@@ -31,7 +31,7 @@ const Eotm = () => {
       </div>
 
       {/* Achievement Card */}
-      <div className="mt-5  dark:bg-slate-800/50 border border-slate-300 rounded-xl p-2">
+      <div className="mt-4  dark:bg-slate-800/50 border border-slate-300 rounded-xl p-2">
         <p className="text-sm text-gray-800 dark:text-gray-300 leading-relaxed">
           Recognized for her <span className="text-pink-500"> exceptional</span>{" "}
           <span className="text-indigo-500">patient care</span>,{" "}
